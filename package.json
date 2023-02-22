@@ -16,6 +16,7 @@
     "android:prod-release": "react-native run-android --variant=productionrelease --appIdSuffix=production"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^17.3.0",
     "react": "18.1.0",
     "react-native": "0.70.7",
     "react-native-config": "^1.5.0"
