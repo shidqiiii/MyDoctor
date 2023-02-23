@@ -1,14 +1,14 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {StyleSheet, Text, View} from 'react-native';
 import {IconBackDark} from '../assets';
-import Gap from './Gap';
 import {colors} from '../utils';
+import Gap from './Gap';
 
-const Header = () => {
+const Header = ({title}) => {
   return (
     <View style={styles.container}>
       <IconBackDark />
-      <Text style={styles.text}>Header</Text>
+      <Text style={styles.text}>{title}</Text>
       <Gap width={24} />
     </View>
   );

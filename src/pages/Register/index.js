@@ -6,7 +6,7 @@ import {colors} from '../../utils';
 const Register = () => {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header title="Daftar Akun" />
       <View style={styles.content}>
         <Input label="Full Name" />
         <Gap height={24} />

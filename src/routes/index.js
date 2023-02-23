@@ -1,7 +1,7 @@
-import {StyleSheet} from 'react-native';
-import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Splash, GetStarted, Login, Register} from '../pages';
+import React from 'react';
+import {StyleSheet} from 'react-native';
+import {GetStarted, Login, Register, Splash} from '../pages';
 
 const Stack = createNativeStackNavigator();
 
