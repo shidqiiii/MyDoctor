@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {colors} from '../utils';
+import {colors, fonts} from '../utils';
 import Button from './Button';
 import Gap from './Gap';
 
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 20,
     textAlign: 'center',
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: fonts.primary[600],
     color: colors.text.primary,
   },
 });
