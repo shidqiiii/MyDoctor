@@ -1,13 +1,37 @@
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {GetStarted, Login, Register, Splash, UploadPhoto} from '../pages';
+import {ButtonNavigator} from '../components';
+import {
+  Doctor,
+  GetStarted,
+  Hospitals,
+  Login,
+  Messages,
+  Register,
+  Splash,
+  UploadPhoto,
+} from '../pages';
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
+
+const MainApp = () => {
+  return (
+    <Tab.Navigator
+      screenOptions={{headerShown: false}}
+      tabBar={props => <ButtonNavigator {...props} />}>
+      <Tab.Screen name="Doctor" component={Doctor} />
+      <Tab.Screen name="Messages" component={Messages} />
+      <Tab.Screen name="Hospitals" component={Hospitals} />
+    </Tab.Navigator>
+  );
+};
 
 const Router = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="MainApp">
       <Stack.Screen
         name="Splash"
         component={Splash}
@@ -31,6 +55,11 @@ const Router = () => {
       <Stack.Screen
         name="UploadPhoto"
         component={UploadPhoto}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="MainApp"
+        component={MainApp}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
