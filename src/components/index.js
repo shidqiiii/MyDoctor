@@ -6,6 +6,7 @@ import Header from './Header';
 import HomeProfile from './HomeProfile';
 import Input from './Input';
 import Link from './Link';
+import ListDoctor from './ListDoctor';
 import NewsItem from './NewsItem';
 import RatedDoctor from './RatedDoctor';
 import TabItem from './TabItem';
@@ -15,6 +16,7 @@ export {
   NewsItem,
   RatedDoctor,
   DoctorCategory,
+  ListDoctor,
   Gap,
   Input,
   Link,
