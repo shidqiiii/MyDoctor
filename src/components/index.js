@@ -7,6 +7,7 @@ import HomeProfile from './HomeProfile';
 import Input from './Input';
 import Link from './Link';
 import ListDoctor from './ListDoctor';
+import ListHospital from './ListHospital';
 import NewsItem from './NewsItem';
 import RatedDoctor from './RatedDoctor';
 import TabItem from './TabItem';
@@ -19,6 +20,7 @@ export {
   ListDoctor,
   Gap,
   Input,
+  ListHospital,
   Link,
   Header,
   TabItem,
