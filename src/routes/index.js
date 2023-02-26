@@ -4,6 +4,7 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 import {ButtonNavigator} from '../components';
 import {
+  ChooseDoctor,
   Doctor,
   GetStarted,
   Hospitals,
@@ -60,6 +61,11 @@ const Router = () => {
       <Stack.Screen
         name="MainApp"
         component={MainApp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ChooseDoctor"
+        component={ChooseDoctor}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

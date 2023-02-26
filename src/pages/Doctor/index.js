@@ -9,8 +9,9 @@ import {
 } from '../../components';
 import {colors, fonts} from '../../utils';
 import {JSONCategoryDoctor} from '../../assets';
+import Config from 'react-native-config';
 
-const Doctor = () => {
+const Doctor = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
@@ -27,7 +28,11 @@ const Doctor = () => {
               <View style={styles.category}>
                 <Gap width={32} />
                 {JSONCategoryDoctor.data.map(item => (
-                  <DoctorCategory key={item.id} category={item.category} />
+                  <DoctorCategory
+                    key={item.id}
+                    category={item.category}
+                    onPress={() => navigation.navigate('ChooseDoctor')}
+                  />
                 ))}
                 <Gap width={22} />
               </View>

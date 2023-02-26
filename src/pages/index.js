@@ -1,14 +1,16 @@
+import ChooseDoctor from './ChooseDoctor';
+import Doctor from './Doctor';
 import GetStarted from './GetStarted';
+import Hospitals from './Hospitals';
 import Login from './Login';
+import Messages from './Messages';
 import Register from './Register';
 import Splash from './Splash';
 import UploadPhoto from './UploadPhoto';
-import Doctor from './Doctor';
-import Messages from './Messages';
-import Hospitals from './Hospitals';
 
 export {
   Splash,
+  ChooseDoctor,
   GetStarted,
   Login,
   Register,
