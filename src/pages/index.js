@@ -1,3 +1,4 @@
+import Chatting from './Chatting';
 import ChooseDoctor from './ChooseDoctor';
 import Doctor from './Doctor';
 import GetStarted from './GetStarted';
@@ -10,6 +11,7 @@ import UploadPhoto from './UploadPhoto';
 
 export {
   Splash,
+  Chatting,
   ChooseDoctor,
   GetStarted,
   Login,

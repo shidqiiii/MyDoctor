@@ -3,22 +3,28 @@ const mainColors = {
   green2: '#edfcfd',
   dark1: '#112340',
   dark2: '#495a75',
+  dark3: '#8092AF',
   grey1: '#7d8797',
   grey2: '#e9e9e9',
+  grey3: '#EDEEF0',
   white1: '#ffffff',
   black1: '#000000',
+  blue1: '#0066CB',
 };
 
 export const colors = {
   primary: mainColors.green1,
   secondary: mainColors.dark1,
+  tertiary: mainColors.blue1,
   white: mainColors.white1,
   black: mainColors.black1,
+  disable: mainColors.grey3,
   text: {
     primary: mainColors.dark1,
     secondary: mainColors.grey1,
     menuInactive: mainColors.dark2,
     menuActive: mainColors.green1,
+    subTitle: mainColors.dark3,
   },
   button: {
     primary: {
