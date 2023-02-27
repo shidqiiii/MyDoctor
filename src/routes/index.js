@@ -1,7 +1,7 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {BackHandler, StyleSheet} from 'react-native';
 import {ButtonNavigator} from '../components';
 import {
   Chatting,
