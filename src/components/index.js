@@ -8,20 +8,24 @@ import HomeProfile from './HomeProfile';
 import Input from './Input';
 import InputChat from './InputChat';
 import Link from './Link';
-import ListDoctor from './ListDoctor';
+import List from './List';
 import ListHospital from './ListHospital';
 import NewsItem from './NewsItem';
 import RatedDoctor from './RatedDoctor';
 import TabItem from './TabItem';
+import Profile from './Profile';
+import ProfileItem from './ProfileItem';
 
 export {
   Button,
+  Profile,
+  ProfileItem,
   InputChat,
   ChatItem,
   NewsItem,
   RatedDoctor,
   DoctorCategory,
-  ListDoctor,
+  List,
   Gap,
   Input,
   ListHospital,

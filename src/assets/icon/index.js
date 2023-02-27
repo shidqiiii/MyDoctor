@@ -12,6 +12,10 @@ import IconRemovePhoto from './ic-remove-photo.svg';
 import IconSendDark from './ic-send-dark.svg';
 import IConSendLight from './ic-send-light.svg';
 import IconStar from './ic-star.svg';
+import IConEditProfile from './ic-edit-profile.svg';
+import IConLanguage from './ic-language.svg';
+import IConRate from './ic-rate.svg';
+import IConHelp from './ic-help.svg';
 
 export {
   IconBackDark,
@@ -28,4 +32,8 @@ export {
   IconMessages,
   IconMessagesActive,
   IconStar,
+  IConEditProfile,
+  IConLanguage,
+  IConRate,
+  IConHelp,
 };

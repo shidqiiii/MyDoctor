@@ -8,9 +8,15 @@ import Messages from './Messages';
 import Register from './Register';
 import Splash from './Splash';
 import UploadPhoto from './UploadPhoto';
+import UserProfile from './UserProfile';
+import UpdateProfile from './UpdateProfile';
+import DoctorProfile from './DoctorProfile';
 
 export {
   Splash,
+  DoctorProfile,
+  UserProfile,
+  UpdateProfile,
   Chatting,
   ChooseDoctor,
   GetStarted,
