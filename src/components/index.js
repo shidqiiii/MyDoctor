@@ -15,9 +15,11 @@ import RatedDoctor from './RatedDoctor';
 import TabItem from './TabItem';
 import Profile from './Profile';
 import ProfileItem from './ProfileItem';
+import Loading from './Loading';
 
 export {
   Button,
+  Loading,
   Profile,
   ProfileItem,
   InputChat,
