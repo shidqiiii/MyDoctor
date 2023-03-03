@@ -2,9 +2,9 @@ import auth from '@react-native-firebase/auth';
 import database from '@react-native-firebase/database';
 import React, {useState} from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
+import {showMessage} from 'react-native-flash-message';
 import {Button, Gap, Header, Input, Loading} from '../../components';
-import {colors, useForm} from '../../utils';
-import {showMessage, hideMessage} from 'react-native-flash-message';
+import {colors, storeData, useForm} from '../../utils';
 
 const Register = ({navigation}) => {
   const [form, setForm] = useForm({
@@ -17,22 +17,20 @@ const Register = ({navigation}) => {
   const [loading, setloading] = useState(false);
 
   const onContinue = () => {
-    // navigation.navigate('UploadPhoto')
     setloading(true);
     auth()
       .createUserWithEmailAndPassword(form.email, form.password)
       .then(success => {
         setForm('reset');
-        // console.log(success);
-        // console.log('User account created & signed in!');
         const data = {
           fullName: form.fullName,
           profession: form.profession,
           email: form.email,
         };
         database().ref(`users/${success.user.uid}/`).set(data);
-        // .then(() => console.log('Data set in database'));
+        storeData('user', data);
         setloading(false);
+        navigation.navigate('UploadPhoto');
       })
       .catch(error => {
         showMessage({
